@@ -10,7 +10,12 @@
    "default_popup": "popup.html"
   },
   "permissions": [
+<<<<<<< HEAD
   "fileSystem"
   "alarms"
+=======
+  "alarms"
+  "history"
+>>>>>>> 0982e15e882d4baf1b256040f5753e8ba228be54
    ]
 }
