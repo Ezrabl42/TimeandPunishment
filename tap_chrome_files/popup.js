@@ -5,14 +5,15 @@ document.addEventListener('DOMContentLoaded', function() {
   checkPageButton.addEventListener('click', function() {
 console.log("clicked");
 
-      console.log("found tab");
       d = document;
-      var f = d.createElement('form');
       var phoneNumber = d.getElementById("phone_value").value;
       var time = d.getElementById("timer_value").value;
       
-console.log("time",time);
-console.log("phoneNumber", phoneNumber);
-  
+      console.log("time",time);
+      console.log("phoneNumber", phoneNumber);
+      chrome.alarms.create("alarm",{delayInMinutes:1 ,periodInMinutes: time.value} )
+
+      chrome.alarms.onAlarm.addListener(function (){
+          console.log("hey it works!");})
   }, false);
 }, false);
