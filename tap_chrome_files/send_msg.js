@@ -1,4 +1,4 @@
-function send_msg(hasSinned,num)
+function send_msg()
 {
     //Enter number
     var clientNum = num;
@@ -81,4 +81,4 @@ function send_msg(hasSinned,num)
 }
 
 
-module.exports.send_msg = send_msg;
+exports.send_msg = send_msg;
