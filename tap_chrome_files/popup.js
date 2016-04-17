@@ -11,10 +11,12 @@ console.log("clicked");
       
       console.log("time",time);
       console.log("phoneNumber", phoneNumber);
-      chrome.alarms.create("alarm",{delayInMinutes:time.value } )
+      chrome.alarms.create("alarm",{delayInMinutes:1 } );
 
       chrome.alarms.onAlarm.addListener(function (){
           //background listener
           console.log("hey it works!");})
+
+
   }, false);
 }, false);
