@@ -12,10 +12,11 @@
   },
 
   "background":
-{
-  "scripts": ["eventPage.js"],
+  {
+  "page": "eventPage.html",
   "persistent":false
-},
+  },
+
   "permissions": 
   [
   "alarms",
