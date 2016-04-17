@@ -1,20 +1,18 @@
+
 document.addEventListener('DOMContentLoaded', function() {
-  var checkPageButton = document.getElementById('checkPage');
+  console.log("hi");
+  var checkPageButton = document.getElementById('buttonclick');
   checkPageButton.addEventListener('click', function() {
+console.log("clicked");
 
-    chrome.tabs.getSelected(null, function(tab) {
+      console.log("found tab");
       d = document;
-
       var f = d.createElement('form');
-      f.action = 'http://gtmetrix.com/analyze.html?bm';
-      f.method = 'post';
-      var i = d.createElement('input');
-      i.type = 'hidden';
-      i.name = 'url';
-      i.value = tab.url;
-      f.appendChild(i);
-      d.body.appendChild(f);
-      f.submit();
-    });
+      var phoneNumber = d.getElementById("phone_value").value;
+      var time = d.getElementById("timer_value").value;
+      
+console.log("time",time);
+console.log("phoneNumber", phoneNumber);
+  
   }, false);
 }, false);

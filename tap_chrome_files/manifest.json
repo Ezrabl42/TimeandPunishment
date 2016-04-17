@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
 
   "name": "time and pun",
   "description": "This extension will analyze a page using GTmetrix",
@@ -10,6 +10,6 @@
    "default_popup": "popup.html"
   },
   "permissions": [
-   "activeTab"
+  "fileSystem"
    ]
 }
